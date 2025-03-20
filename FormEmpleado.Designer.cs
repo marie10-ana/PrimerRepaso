@@ -34,10 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.maskedTxtSueldo = new System.Windows.Forms.MaskedTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.numericNoEmpleado = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numericNoEmpleado)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonAsistencia
@@ -96,13 +96,6 @@
             this.txtNombre.Size = new System.Drawing.Size(149, 20);
             this.txtNombre.TabIndex = 5;
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(176, 53);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 7;
-            // 
             // buttonGuardar
             // 
             this.buttonGuardar.Location = new System.Drawing.Point(100, 197);
@@ -111,6 +104,7 @@
             this.buttonGuardar.TabIndex = 8;
             this.buttonGuardar.Text = "Guardar";
             this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
             // maskedTxtSueldo
             // 
@@ -120,14 +114,21 @@
             this.maskedTxtSueldo.Size = new System.Drawing.Size(42, 20);
             this.maskedTxtSueldo.TabIndex = 9;
             // 
+            // numericNoEmpleado
+            // 
+            this.numericNoEmpleado.Location = new System.Drawing.Point(176, 53);
+            this.numericNoEmpleado.Name = "numericNoEmpleado";
+            this.numericNoEmpleado.Size = new System.Drawing.Size(120, 20);
+            this.numericNoEmpleado.TabIndex = 10;
+            // 
             // FormEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 353);
+            this.Controls.Add(this.numericNoEmpleado);
             this.Controls.Add(this.maskedTxtSueldo);
             this.Controls.Add(this.buttonGuardar);
-            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -136,7 +137,7 @@
             this.Controls.Add(this.ButtonAsistencia);
             this.Name = "FormEmpleado";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericNoEmpleado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,9 +151,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button buttonGuardar;
         private System.Windows.Forms.MaskedTextBox maskedTxtSueldo;
+        private System.Windows.Forms.NumericUpDown numericNoEmpleado;
     }
 }
 
