@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace PrimerRepaso
 {
-    public partial class Form1 : Form
+    public partial class FormAsistencia : Form
     {
-        public Form1()
+        public FormAsistencia()
         {
             InitializeComponent();
+        }
+
+        private void buttonCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
         }
     }
 }

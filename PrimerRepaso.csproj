@@ -63,14 +63,26 @@
   <ItemGroup>
     <Compile Include="Asistencia.cs" />
     <Compile Include="Empleado.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FormEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormEmpleado.Designer.cs">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAsistencia.Designer.cs">
+      <DependentUpon>FormAsistencia.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAsistencia.resx">
+      <DependentUpon>FormAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmpleado.resx">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
