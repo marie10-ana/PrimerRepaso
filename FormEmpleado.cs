@@ -18,6 +18,16 @@ namespace PrimerRepaso
             InitializeComponent();
         }
 
+        public void Mostrar()
+        {
+            EmpleadoPersistencia empleadoPersistencia = new EmpleadoPersistencia();
+            empleados = empleadoPersistencia.Leer(@"../../Empleados.txt");
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = empleados;
+            dataGridView1.Refresh();
+        }
+
         private void ButtonAsistencia_Click(object sender, EventArgs e)
         {
             FormAsistencia formAsistencia = new FormAsistencia();
@@ -49,8 +59,14 @@ namespace PrimerRepaso
             empleados.Add(empleado);
             EmpleadoPersistencia empleadoPersistencia = new EmpleadoPersistencia();
             empleadoPersistencia.Guardar(@"../../Empleados.txt", empleados);
-        }
 
+            Mostrar();
+        }
+        
        
+        private void FormEmpleado_Load(object sender, EventArgs e)
+        {
+            Mostrar();
+        }
     }
 }

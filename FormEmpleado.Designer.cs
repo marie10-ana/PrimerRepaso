@@ -37,12 +37,14 @@
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.maskedTxtSueldo = new System.Windows.Forms.MaskedTextBox();
             this.numericNoEmpleado = new System.Windows.Forms.NumericUpDown();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.numericNoEmpleado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonAsistencia
             // 
-            this.ButtonAsistencia.Location = new System.Drawing.Point(413, 31);
+            this.ButtonAsistencia.Location = new System.Drawing.Point(378, 242);
             this.ButtonAsistencia.Name = "ButtonAsistencia";
             this.ButtonAsistencia.Size = new System.Drawing.Size(119, 37);
             this.ButtonAsistencia.TabIndex = 0;
@@ -52,9 +54,9 @@
             // 
             // buttonCerrar
             // 
-            this.buttonCerrar.Location = new System.Drawing.Point(413, 210);
+            this.buttonCerrar.Location = new System.Drawing.Point(587, 246);
             this.buttonCerrar.Name = "buttonCerrar";
-            this.buttonCerrar.Size = new System.Drawing.Size(119, 28);
+            this.buttonCerrar.Size = new System.Drawing.Size(119, 33);
             this.buttonCerrar.TabIndex = 1;
             this.buttonCerrar.Text = "Cerrar";
             this.buttonCerrar.UseVisualStyleBackColor = true;
@@ -121,11 +123,20 @@
             this.numericNoEmpleado.Size = new System.Drawing.Size(120, 20);
             this.numericNoEmpleado.TabIndex = 10;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(433, 55);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 11;
+            // 
             // FormEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 353);
+            this.ClientSize = new System.Drawing.Size(818, 353);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.numericNoEmpleado);
             this.Controls.Add(this.maskedTxtSueldo);
             this.Controls.Add(this.buttonGuardar);
@@ -137,7 +148,9 @@
             this.Controls.Add(this.ButtonAsistencia);
             this.Name = "FormEmpleado";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormEmpleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericNoEmpleado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,6 +167,7 @@
         private System.Windows.Forms.Button buttonGuardar;
         private System.Windows.Forms.MaskedTextBox maskedTxtSueldo;
         private System.Windows.Forms.NumericUpDown numericNoEmpleado;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
