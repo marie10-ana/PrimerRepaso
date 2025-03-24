@@ -16,7 +16,7 @@ namespace PrimerRepaso
         {
             string json = JsonConvert.SerializeObject(empleados);
             string archivo = "Datos.json";
-            System.IO.File.WriteAllText(archibo, json);
+            System.IO.File.WriteAllText(archivo, json);
         }
 
         public List<Empleado> Leer(string archivo)

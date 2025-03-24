@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace PrimerRepaso
 {
-    internal class Asistencia
+    internal class ReporteSueldo
     {
-        public int NoEmpleado { get; set; }
-        public int HoraMes { get; set; }
-        public int Mes {  get; set; }
+        public string Nombre;
+        public decimal SueldoTotal;
+        public string Mes;
+
+
     }
 }
