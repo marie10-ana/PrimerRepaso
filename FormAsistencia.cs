@@ -37,9 +37,9 @@ namespace PrimerRepaso
             asistencias.Add(asistencia);
 
             AsistenciaPersistencia asistenciaPersistencia = new AsistenciaPersistencia();
-            asistenciaPersistencia.
+            asistenciaPersistencia.Guardar("../../Asitencias.json", asistencias);
 
-            
+
         }
 
         private void FormAsistencia_Load(object sender, EventArgs e)
@@ -51,6 +51,9 @@ namespace PrimerRepaso
             comboBoxEmpleados.DisplayMember = "Nombre";
             comboBoxEmpleados.ValueMember = "NoEmpleado";
             comboBoxEmpleados.DataSource = empleados;
+
+            AsistenciaPersistencia asistenciaArchivo = new AsistenciaPersistencia();
+            asistencias = asistenciaArchivo.Leer("../../Asitencias.json");
         }
     }
 }
