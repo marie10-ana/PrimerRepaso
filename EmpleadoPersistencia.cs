@@ -12,10 +12,9 @@ namespace PrimerRepaso
 {
     internal class EmpleadoPersistencia
     {
-        public void Guardar(string archibo, List<Empleado> empleados)
+        public void Guardar(string archivo, List<Empleado> empleados)
         {
             string json = JsonConvert.SerializeObject(empleados);
-            string archivo = "Datos.json";
             System.IO.File.WriteAllText(archivo, json);
         }
 

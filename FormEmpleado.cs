@@ -58,15 +58,15 @@ namespace PrimerRepaso
 
             empleados.Add(empleado);
             EmpleadoPersistencia empleadoPersistencia = new EmpleadoPersistencia();
-            empleadoPersistencia.Guardar(@"../../Empleados.txt", empleados);
+            empleadoPersistencia.Guarda
 
-            Mostrar();
+            //Mostrar();
         }
         
        
         private void FormEmpleado_Load(object sender, EventArgs e)
         {
-            Mostrar();
+            //Mostrar();
         }
     }
 }
